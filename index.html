@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hr">
+	<head>
+		<title>Index</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Luka Bočkaj">
+		<meta name="keywords" content="Početna, Putni Aranžman, video, bilten">
+		<link href="css/dizajn.css" rel="stylesheet" type="text/css">
+		<link href="css/dizajn_responzivni_m.css" rel="stylesheet" type="text/css">
+		<link href="css/dizajn_ispis.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><img src="dokumenti/slike/logo.png" alt="Logo" id="logo"></a>
+		</header>
+		<nav>
+			<img src="dokumenti/slike/hamburger.png" alt="hamburger" id="hamburger">
+			<ul>
+				<li><a href="index.html">Početna</a></li>
+				<li><a href="dokumentacija/o_autoru.html">O Autoru</a></li>
+				<li><a href="dokumentacija/dokumentacija.html">Dokumentacija</a></li>
+				<li><a href="ostalo/aranzmani.html">Aranžmani</a></li>
+				<li><a href="ostalo/kontakt.html">Kontakt</a></li>
+				<li><a href="ostalo/rezervacije.html">Rezervacije</a></li>
+				<li><a href="ostalo/galerija.html">Galerija</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Dobrodošli na Putne Aranžmane</h2>
+			<p id="rezervirajte_p">Ovdje možete pronaći najbolje putne aranžmane za vaše savršeno putovanje. Pregledajte našu ponudu i odaberite destinaciju iz snova.</p>
+			<a id="rezervirajte" href="ostalo/rezervacije.html" class="cta">Rezervirajte sada</a>
+			<section id="aranzmani">
+				<div class="odrediste" id="prvi">
+					<a href="ostalo/aranzmani.html">
+					<img src="dokumenti/slike/aranzman1.jpg" alt="San Marino"></a>
+					<div class="odrediste-detalji">
+						<a href="ostalo/aranzmani.html"><h2>Povijest San Marina</h2></a>
+						<p>Dobrodošli u San Marino, malu enklavu bogatu poviješću, kulturom i prekrasnim krajolicima. Naša San Marino Avantura nudi vam nezaboravno putovanje kroz ovo slikovito srednjovjekovno kraljevstvo.</p>
+						<p>Cijena: 400 eura</p>
+					</div>
+				</div>
+				<div class="odrediste" id="drugi">
+					<a href="ostalo/aranzmani.html">
+					<img src="dokumenti/slike/aranzman2.jpg" alt="San Marino"></a>
+					<div class="odrediste-detalji">
+						<a href="ostalo/aranzmani.html"><h2>Barcelonske Avanture</h2></a>
+						<p>Dobrodošli u Barcelonu, živopisni grad koji pulsira energijom umjetnosti, kulture i života. Naša "Barcelona - Grad Života" nudi vam nezaboravno putovanje kroz ovo fascinantno španjolsko odredište.</p>
+						<p>Cijena: 700 eura</p>
+					</div>
+				</div>
+				<div class="odrediste" id="treci">
+					<a href="ostalo/aranzmani.html">
+					<img src="dokumenti/slike/aranzman3.jpg" alt="Monako"></a>
+					<div class="odrediste-detalji">
+						<a href="ostalo/aranzmani.html"><h2>Luksuz u Monaku</h2></a>
+						<p>Dobrodošli u Monako, biser Azurne obale, gdje se luksuz i elegancija stapaju s prekrasnim pejzažima i bogatom kulturom. Naša "Monako - Biser Azurne Obale" nudi vam ekskluzivno putovanje kroz ovu mondensku destinaciju.</p>
+						<p>Cijena: 1000 eura</p>
+					</div>
+				</div>
+			</section>
+        <h2 class="nasl-rec">Recenzije gostiju</h2>
+        <div class="recenzije">
+            <h3>Pero P.</h3>
+			<p>"Nevjerojatno iskustvo! Monako je apsolutno očaravajući i luksuzan."</p>
+			<h3>ivana M.</h3>
+			<p>"Barcelona me oduševila! Gaudijeva djela su nevjerojatna, hrana fantastična."</p>
+			<h3>Marko H.</h3>
+			<p>"Prekrasan smještaj i fascinantne znamenitosti. Topla preporuka!"</p>
+        </div>
+        <h2 id="h_bilten">Prijavite se na naš bilten</h2>
+        <form id="bilten" action="https://spider.foi.hr/UWT/materijali/ispis_forme.php" method="post">
+            <input type="email" name="email" placeholder="Unesite svoj e-mail" required>
+            <button type="submit">Prijavi se</button>
+        </form>
+		<div id="video">
+			<video controls>
+				<source src="dokumenti/multimedija/video.mp4" type="video/mp4">
+			</video>
+		</div>
+		</main>
+		<footer>
+			<p>
+				&copy; 2024 Luka Bočkaj
+			</p>
+			<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
+				<img src="dokumenti/slike/CC_BY-NC.png" alt="CC BY-NC Licenca" id="licenca">
+			</a>
+			<a href="https://spider.foi.hr/UWT/materijali/slike/HTML5.png" target="_blank">
+				<img src="https://spider.foi.hr/UWT/materijali/slike/HTML5.png" alt="HTML5 Validator" id="html5-validator">
+			</a>
+		</footer>
+	</body>
+</html>

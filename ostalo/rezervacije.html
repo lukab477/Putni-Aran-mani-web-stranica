@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hr">
+	<head>
+		<title>Dodatna stranica</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Luka Bočkaj">
+		<meta name="keywords" content="Rezervacije, Putovanja, Aranžmani, Turizam">
+		<link href="../css/dizajn.css" rel="stylesheet" type="text/css">
+		<link href="../css/dizajn_responzivni_m.css" rel="stylesheet" type="text/css">
+		<link href="../css/dizajn_ispis.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			<a href="../index.html"><img src="../dokumenti/slike/logo.png" alt="Logo" id="logo"></a>
+		</header>
+		<nav>
+			<img src="../dokumenti/slike/hamburger.png" alt="hamburger" id="hamburger">
+			<ul>
+				<li><a href="../index.html">Početna</a></li>
+				<li><a href="../dokumentacija/o_autoru.html">O Autoru</a></li>
+				<li><a href="../dokumentacija/dokumentacija.html">Dokumentacija</a></li>
+				<li><a href="aranzmani.html">Aranžmani</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="rezervacije.html">Rezervacije</a></li>
+				<li><a href="galerija.html">Galerija</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section id="obrazac-rezervacije">
+				<h2>Obrazac za rezervacije</h2>
+				<form action="https://spider.foi.hr/UWT/materijali/ispis_forme.php" method="post">
+					<label for="ime-prezime">Ime i prezime:</label>
+					<input type="text" id="ime-prezime" name="ime-prezime" maxlength="150" required>
+					<br>
+
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" name="email" placeholder="korisnik@domena.hr" required>
+					<br>
+
+					<label for="telefon">Broj telefona:</label>
+					<input type="tel" id="telefon" name="telefon" placeholder="097-643-872" required>
+					<br>
+
+					<label for="aranzman">Odabir putnog aranžmana:</label>
+					<select id="aranzman" name="aranzman" size="3" required>
+						<option value="barcelona">Barcelona</option>
+						<option value="monaco">San Marino</option>
+						<option value="san-marino">Monaco</option>
+						<option value="barcelona">Venecija</option>
+						<option value="monaco">Pariz</option>
+						<option value="san-marino">Malta</option>
+					</select>
+					<br>
+
+					<label for="datum">Željeni datum putovanja:</label>
+					<input type="date" id="datum" name="datum" required>
+					<br>
+
+					<label for="osobe">Broj osoba:</label>
+					<input type="number" id="osobe" name="osobe" min="1" max="6" required>
+					<br>
+
+					<label for="gdje-culi">Gdje ste čuli za nas?</label>
+					<select id="gdje-culi" name="gdje-culi" multiple>
+						<option value="preporuka">Preporuka</option>
+						<option value="web">Web stranica</option>
+						<option value="drustvene-mreze">Društvene mreže</option>
+						<option value="reklama">Reklama</option>
+						<option value="novine">Novine</option>
+						<option value="tv">TV</option>
+					</select>
+					<br>
+
+					<label for="poruka">Poruka:</label>
+					<textarea id="poruka" name="poruka" rows="10" cols="50" minlength="50"></textarea>
+					<br>
+
+					<label for="gdpr-da">Suglasnost za GDPR:</label>
+					<input type="radio" id="gdpr-da" name="gdpr" value="da" required> Da
+					<input type="radio" id="gdpr-ne" name="gdpr" value="ne" required> Ne
+					<br>
+
+					<button type="submit">Pošalji</button>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<p>
+				&copy; 2024 Luka Bočkaj
+			</p>
+			<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
+				<img src="../dokumenti/slike/CC_BY-NC.png" alt="CC BY-NC Licenca" id="licenca">
+			</a>
+			<a href="https://spider.foi.hr/UWT/materijali/slike/HTML5.png" target="_blank">
+				<img src="https://spider.foi.hr/UWT/materijali/slike/HTML5.png" alt="HTML5 Validator" id="html5-validator">
+			</a>
+		</footer>
+	</body>
+</html>
